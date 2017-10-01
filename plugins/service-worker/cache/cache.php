@@ -19,7 +19,7 @@ class PlgServiceWorkerCache extends JPlugin
 	/**
 	 * Get the service workers
 	 *
-	 * @return  array
+	 * @return  string  The path to the service worker file
 	 *
 	 * @since  __DEPLOY_VERSION__
 	 */
@@ -31,6 +31,6 @@ class PlgServiceWorkerCache extends JPlugin
 			return array();
 		}
 
-		return array('media/plg_service-worker_cache/sw.js');
+		return 'media/plg_service-worker_cache/sw.js';
 	}
 }
